@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Toowong Village Intersection Experience Survey</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="container">
+
+    <!-- Survey Introduction -->
+    <section class="survey-header">
+
+      <h1>Toowong Village Intersection Experience Survey</h1>
+
+      <p class="survey-info">
+        Anonymous Survey | Estimated completion time: 2–3 minutes
+      </p>
+
+      <h2>Purpose of the Survey</h2>
+
+      <p>
+        This short survey aims to understand people's experiences with traffic
+        lights and intersections around Toowong Village. We are interested in
+        identifying whether there are common issues with intersection waiting
+        times and traffic conditions in this area.
+      </p>
+
+      <h2>Participant Information</h2>
+
+      <p>
+        Participation in this survey is voluntary. Please answer the questions
+        based on your own experiences during the past month.
+      </p>
+
+      <p>
+        There are no right or wrong answers. You may skip any question that you
+        do not wish to answer.
+      </p>
+
+      <div class="anonymous-box">
+        <strong>Anonymous Survey</strong>
+        <p>
+          This survey does not ask for your name, email address, or other direct
+          identifying information. Please avoid entering personal information
+          in any free-text response.
+        </p>
+      </div>
+
+    </section>
+
+
+    <form id="surveyForm">
+
+      <!-- Q1 -->
+      <section class="question">
+
+        <h3>
+          Q1. During the past month, how often have you travelled through the
+          area around Toowong Village?
+        </h3>
+
+        <p class="instruction">Select one answer.</p>
+
+        <label>
+          <input type="radio" name="q1" value="5 or more days per week">
+          5 or more days per week
+        </label>
+
+        <label>
+          <input type="radio" name="q1" value="3-4 days per week">
+          3–4 days per week
+        </label>
+
+        <label>
+          <input type="radio" name="q1" value="1-2 days per week">
+          1–2 days per week
+        </label>
+
+        <label>
+          <input type="radio" name="q1" value="1-3 days per month">
+          1–3 days per month
+        </label>
+
+        <label>
+          <input type="radio" name="q1" value="Less than once per month">
+          Less than once per month
+        </label>
+
+      </section>
+
+
+      <!-- Q2 -->
+      <section class="question">
+
+        <h3>
+          Q2. How do you usually travel through intersections around
+          Toowong Village?
+        </h3>
+
+        <p class="instruction">Select all that apply.</p>
+
+        <label>
+          <input type="checkbox" name="q2" value="Driving">
+          Driving
+        </label>
+
+        <label>
+          <input type="checkbox" name="q2" value="Walking">
+          Walking
+        </label>
+
+        <label>
+          <input type="checkbox" name="q2" value="Cycling">
+          Cycling
+        </label>
+
+        <label>
+          <input
+            type="checkbox"
+            id="q2OtherCheckbox"
+            name="q2"
+            value="Other"
+          >
+          Other
+        </label>
+
+        <div id="q2OtherBox" class="other-box hidden">
+
+          <input
+            type="text"
+            name="q2_other"
+            placeholder="Please specify"
+          >
+
+        </div>
+
+      </section>
+
+
+      <!-- Q3 -->
+      <section class="question">
+
+        <h3>
+          Q3. When do you usually travel around Toowong Village?
+        </h3>
+
+        <p class="instruction">Select all that apply.</p>
+
+        <label>
+          <input
+            type="checkbox"
+            name="q3"
+            value="Morning peak"
+          >
+          Morning peak (7:00–9:00 am)
+        </label>
+
+        <label>
+          <input
+            type="checkbox"
+            name="q3"
+            value="Off-peak daytime"
+          >
+          Off-peak daytime (9:00 am–4:00 pm)
+        </label>
+
+        <label>
+          <input
+            type="checkbox"
+            name="q3"
+            value="Evening peak"
+          >
+          Evening peak (4:00–6:00 pm)
+        </label>
+
+        <label>
+          <input
+            type="checkbox"
+            name="q3"
+            value="Evening or night"
+          >
+          Evening / night (after 6:00 pm)
+        </label>
+
+      </section>
+
+
+      <!-- Q4 -->
+      <section class="question">
+
+        <h3>
+          Q4. During the past month, approximately how many times have you
+          experienced the following situations at traffic lights around
+          Toowong Village?
+        </h3>
+
+        <p class="instruction">
+          Select one answer for each situation.
+        </p>
+
+        <div class="table-container">
+
+          <table>
+
+            <thead>
+              <tr>
+                <th>Situation</th>
+                <th>Never</th>
+                <th>1–2 times</th>
+                <th>3–5 times</th>
+                <th>6–10 times</th>
+                <th>More than 10 times</th>
+                <th>Not sure</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <!-- Situation A -->
+              <tr>
+
+                <td>
+                  A. Waiting as a pedestrian while there were few or no
+                  vehicles passing through the intersection.
+                </td>
+
+                <td>
+                  <input type="radio" name="q4a" value="Never">
+                </td>
+
+                <td>
+                  <input type="radio" name="q4a" value="1-2 times">
+                </td>
+
+                <td>
+                  <input type="radio" name="q4a" value="3-5 times">
+                </td>
+
+                <td>
+                  <input type="radio" name="q4a" value="6-10 times">
+                </td>
+
+                <td>
+                  <input type="radio" name="q4a" value="More than 10 times">
+                </td>
+
+                <td>
+                  <input type="radio" name="q4a" value="Not sure">
+                </td>
+
+              </tr>
+
+
+              <!-- Situation B -->
+              <tr>
+
+                <td>
+                  B. Waiting in a vehicle at a red light while there were few
+                  or no pedestrians or conflicting traffic using the
+                  intersection.
+                </td>
+
+                <td>
+                  <input type="radio" name="q4b" value="Never">
+                </td>
+
+                <td>
+                  <input type="radio" name="q4b" value="1-2 times">
+                </td>
+
+                <td>
+                  <input type="radio" name="q4b" value="3-5 times">
+                </td>
+
+                <td>
+                  <input type="radio" name="q4b" value="6-10 times">
+                </td>
+
+                <td>
+                  <input type="radio" name="q4b" value="More than 10 times">
+                </td>
+
+                <td>
+                  <input type="radio" name="q4b" value="Not sure">
+                </td>
+
+              </tr>
+
+
+              <!-- Situation C -->
+              <tr>
+
+                <td>
+                  C. Continuing to wait at a red light even after the traffic
+                  or pedestrian movement that appeared to require the red
+                  signal had cleared.
+                </td>
+
+                <td>
+                  <input type="radio" name="q4c" value="Never">
+                </td>
+
+                <td>
+                  <input type="radio" name="q4c" value="1-2 times">
+                </td>
+
+                <td>
+                  <input type="radio" name="q4c" value="3-5 times">
+                </td>
+
+                <td>
+                  <input type="radio" name="q4c" value="6-10 times">
+                </td>
+
+                <td>
+                  <input type="radio" name="q4c" value="More than 10 times">
+                </td>
+
+                <td>
+                  <input type="radio" name="q4c" value="Not sure">
+                </td>
+
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+
+      <!-- Q5 -->
+      <section class="question">
+
+        <h3>
+          Q5. Based on your experience, how does the time you spend waiting at
+          traffic lights around Toowong Village differ between peak and
+          off-peak periods?
+        </h3>
+
+        <p class="instruction">Select one answer.</p>
+
+        <label>
+          <input
+            type="radio"
+            name="q5"
+            value="Usually shorter during off-peak periods"
+          >
+          Usually shorter during off-peak periods
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="q5"
+            value="About the same"
+          >
+          About the same
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="q5"
+            value="Usually longer during off-peak periods"
+          >
+          Usually longer during off-peak periods
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="q5"
+            value="It varies too much to tell"
+          >
+          It varies too much to tell
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="q5"
+            value="Not sure"
+          >
+          Not sure / I have not travelled during both periods
+        </label>
+
+      </section>
+
+
+      <!-- Q6 -->
+      <section class="question">
+
+        <h3>
+          Q6. Apart from waiting when traffic is light, which
+          intersection-related issues, if any, do you commonly experience
+          around Toowong Village?
+        </h3>
+
+        <p class="instruction">Select all that apply.</p>
+
+        <label>
+          <input type="checkbox" name="q6" value="Long queues">
+          Long queues during peak hours
+        </label>
+
+        <label>
+          <input type="checkbox" name="q6" value="Long waiting times">
+          Long waiting times at traffic lights
+        </label>
+
+        <label>
+          <input type="checkbox" name="q6" value="Pedestrian difficulty">
+          Difficulty crossing the road as a pedestrian
+        </label>
+
+        <label>
+          <input type="checkbox" name="q6" value="Traffic congestion">
+          Traffic congestion
+        </label>
+
+        <label>
+          <input type="checkbox" name="q6" value="Turning difficulty">
+          Difficulty turning at intersections
+        </label>
+
+        <label>
+          <input type="checkbox" name="q6" value="Confusing layout">
+          Confusing intersection or lane layout
+        </label>
+
+        <label>
+          <input type="checkbox" name="q6" value="Poor traffic light coordination">
+          Poor coordination between nearby traffic lights
+        </label>
+
+        <label>
+          <input type="checkbox" name="q6" value="Vehicle pedestrian conflicts">
+          Vehicle–pedestrian conflicts
+        </label>
+
+        <label>
+          <input type="checkbox" name="q6" value="Cycling safety">
+          Cycling safety issues
+        </label>
+
+        <label>
+          <input type="checkbox" name="q6" value="No problems">
+          I do not usually experience any problems
+        </label>
+
+        <label>
+          <input
+            type="checkbox"
+            id="q6OtherCheckbox"
+            name="q6"
+            value="Other"
+          >
+          Other
+        </label>
+
+        <div id="q6OtherBox" class="other-box hidden">
+
+          <input
+            type="text"
+            name="q6_other"
+            placeholder="Please specify"
+          >
+
+        </div>
+
+      </section>
+
+
+      <!-- Q7 -->
+      <section class="question">
+
+        <h3>
+          Q7. How do these intersection-related issues usually affect you?
+        </h3>
+
+        <p class="instruction">Select all that apply.</p>
+
+        <label>
+          <input type="checkbox" name="q7" value="No noticeable impact">
+          No noticeable impact
+        </label>
+
+        <label>
+          <input type="checkbox" name="q7" value="Longer travel time">
+          Longer travel time
+        </label>
+
+        <label>
+          <input type="checkbox" name="q7" value="Frustration or stress">
+          Frustration or stress
+        </label>
+
+        <label>
+          <input type="checkbox" name="q7" value="Difficulty predicting arrival time">
+          Difficulty predicting arrival time
+        </label>
+
+        <label>
+          <input type="checkbox" name="q7" value="Change route">
+          I change my route
+        </label>
+
+        <label>
+          <input type="checkbox" name="q7" value="Avoid intersections">
+          I avoid certain intersections
+        </label>
+
+        <label>
+          <input type="checkbox" name="q7" value="Change travel time">
+          I change the time I travel
+        </label>
+
+        <label>
+          <input type="checkbox" name="q7" value="Feel less safe">
+          I feel less safe when travelling through the area
+        </label>
+
+        <label>
+          <input
+            type="checkbox"
+            id="q7OtherCheckbox"
+            name="q7"
+            value="Other"
+          >
+          Other
+        </label>
+
+        <div id="q7OtherBox" class="other-box hidden">
+
+          <input
+            type="text"
+            name="q7_other"
+            placeholder="Please specify"
+          >
+
+        </div>
+
+      </section>
+
+
+      <!-- Q8 -->
+      <section class="question">
+
+        <h3>
+          Q8. Is there a particular intersection around Toowong Village where
+          you notice these issues most?
+        </h3>
+
+        <p class="instruction">Select one answer.</p>
+
+        <label>
+          <input type="radio" name="q8" value="Yes">
+          Yes
+        </label>
+
+        <label>
+          <input type="radio" name="q8" value="No">
+          No
+        </label>
+
+        <label>
+          <input type="radio" name="q8" value="Not sure">
+          Not sure
+        </label>
+
+
+        <div id="intersectionBox" class="other-box hidden">
+
+          <p>
+            If yes, please provide the intersection or street names:
+          </p>
+
+          <input
+            type="text"
+            name="intersection"
+            placeholder="Enter intersection or street names"
+          >
+
+        </div>
+
+      </section>
+
+
+      <!-- Submit -->
+      <section class="submit-section">
+
+        <button type="submit">
+          Submit Survey
+        </button>
+
+        <p id="confirmationMessage" class="confirmation hidden">
+          Thank you for completing the survey.
+        </p>
+
+      </section>
+
+    </form>
+
+  </main>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
